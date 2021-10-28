@@ -19,7 +19,7 @@ script:
   - docker tag udagram-api-user given8/udagram-api-user:v1
   - docker build -t udagram-frontend ./udagram-frontend/
   - docker tag udagram-frontend given8/udagram-frontend:v1
-  - docker build -t reverseproxy ./reverseproxy/
+  - docker build -t reverseproxy ./udagram-reverseproxy/
   - docker tag reverseproxy given8/reverseproxy:v1
   - docker build -t udagram-api-feed ./udagram-api-feed/
   - docker tag udagram-api-feed given8/udagram-api-feed:v1
