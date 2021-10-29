@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: given8/reverseproxy
+  backend_user:
+    build:
+      context: ../udagram-api-user
+    image: given8/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../udagram-api-feed
+    image: given8/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../udagram-frontend
+    image: given8/udacity-frontend:local
