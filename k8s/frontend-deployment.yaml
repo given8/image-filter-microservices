@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-        - image: given8/udagram-frontend:v1
+        - image: given8/udagram-frontend:v2
           name: frontend
           imagePullPolicy: Always
           ports:
